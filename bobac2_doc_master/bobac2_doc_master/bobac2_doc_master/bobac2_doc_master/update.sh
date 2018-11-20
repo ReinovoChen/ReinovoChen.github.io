@@ -1,8 +1,5 @@
 #!/bin/bash
 gitbook build
 cp -r _book/* bobac2_doc_master
-cd bobac2_doc_master/
-echo $(pwd)
-git add $(pwd)/*
-git commit -m "auto"
+cd bobac2_doc_master
 git push -u origin master
